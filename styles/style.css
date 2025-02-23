@@ -4,12 +4,12 @@
   /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
   /* выше установили ограничение по максимальной ширине */
-  margin: 0 0;
+  margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  /* box-sizing: border-box; */
 }
 
-/* блок header */
 .header {
   margin: 0;
   padding: 0;
@@ -19,12 +19,12 @@
   color: #f2f2f2;
 }
 
-/* название можгло бы иметь header в начале (как название блока),
-но имеет header в качестве модификатора,
-тк есть лого для подвала */
-.logo_place_header {
+.logo {
   width: 228px;
   height: 32px;
+}
+
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -37,7 +37,7 @@
   font-size: 102px;
   font-weight: 600;
   display: flex;
-  align-items: center;
+  align-items:center;
   color: #000000;
 }
 
@@ -81,4 +81,50 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+
+.description {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* border: 1px solid red;  */
+}
+
+.two-columns__brief {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.two-columns__main-text {
+  display: flex;
+  min-width: 784px;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.two-columns__paragraph {
+  width: 100%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
