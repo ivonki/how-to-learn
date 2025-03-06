@@ -5,17 +5,20 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* блок logo */
 .logo {
   width: 228px;
   height: 32px;
 }
 
+/* блок logo с ключ-значением place_header */
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
+/* блок header */
 .header {
   display: flex;
   margin: 0;
@@ -27,6 +30,7 @@
   align-items: center;
 }
 
+/* блок header элемент title */
 .header__title {
   margin-left: 64px;
   width: 730px;
@@ -38,6 +42,7 @@
   color: #000000;
 }
 
+/* блок header элемент subtitle*/
 .header__subtitle {
   line-height: 25px;
   width: 388px;
@@ -49,11 +54,13 @@
   left: 64px;
 }
 
+/* блок header элмент link */
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
+/* блок header элемент main-illustration */
 .header__main-illustration{
   width: 765px;
   height: 608px;
@@ -63,6 +70,7 @@
   z-index: 1;
 }
 
+/* блок header элемент square-pic  */
 .header__square-pic {
   background: #2f80ed;
   height: 568px;
@@ -75,12 +83,13 @@
 
 /* блок description */
 .description {
-  margin-top: 100px;
+  margin-top: 100px; /* по БЭМ следует убрать margin */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* блок two-columns */
 .two-columns {
   display: flex;
   justify-content: space-between;
@@ -88,6 +97,7 @@
   /* border: 1px solid red;  */
 }
 
+/* блок two-columns элемент brief */
 .two-columns__brief {
   margin-top: 0;
   margin-bottom: 0;
@@ -98,6 +108,7 @@
   font-weight: 500;
 }
 
+/* блок two-columns элемент main-text*/
 .two-columns__main-text {
   display: flex;
   min-width: 784px;
@@ -105,6 +116,7 @@
   row-gap: 30px;
 }
 
+/* блок two-columns элемент paragreph*/
 .two-columns__paragraph {
   width: 100%;
   line-height: 34px;
@@ -113,6 +125,7 @@
   margin: 0;
 }
 
+/* блок two-columns элемент span-accent*/
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -127,12 +140,13 @@
   flex-direction: column;
 }
 
+/* модификатор для блока digits */
 .digits_margin {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-
+/* блок section-title */
 .section-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -143,6 +157,7 @@
   width: 60%;
 }
 
+/* блок section-subtitle */
 .section-subtitle {
   margin: 0;
   line-height: 34px;
@@ -150,22 +165,28 @@
   font-weight: 500;
 }
 
+/* блок table */
 .table {
   display: flex;
-  padding-top: 60px;
+  margin-top: 0;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
   /* border: 1px solid red; */
 }
 
+/* модификатор для блока table  */
 .table_width {
   width: 1100px;
 }
 
+/* блок table элемент cell */
 .table__cell {
   width: 250px;
+  padding-top: 60px;
 }
 
+/* блок table элемент heading */
 .table__heading {
   margin-top: 0;
   margin-bottom: 20px;
@@ -174,6 +195,7 @@
   font-weight: 600;
 }
 
+/* блок table элемент text */
 .table__text {
   row-gap: 20px;
   line-height: 1.2;
@@ -181,6 +203,7 @@
   font-weight: 500;
 }
 
+/* блок feynman*/
 .feynman {
   display: flex;
   flex-direction: column;
@@ -191,6 +214,7 @@
   position: relative;
 }
 
+/* блок feynman элемент title*/
 .feynman__title {
   display: flex;
   margin: 100px auto 0px;
@@ -203,6 +227,7 @@
   font-weight: 600;
 }
 
+/* блок feynman элемент subtitle*/
 .feynman__subtitle {
   margin-top: 70px;
   text-align: center;
@@ -213,6 +238,7 @@
   font-weight: 500;
 }
 
+/* блок feynman элемент link*/
 .feynman__link {
   color: #2f80ed;
   text-decoration: none;
@@ -226,6 +252,7 @@
   font-weight: 500;
 }
 
+/* блок feynman элемент img*/
 .feynman__img {
   width: 867px;
   height: 637px;
@@ -234,6 +261,7 @@
   bottom: 0;
 }
 
+/* блок kaufman */
 .kaufman {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -247,15 +275,18 @@
   overflow: hidden;
 }
 
+/* блок section-title модификатор theme_dark*/
 .section-title__theme_dark {
   color: #f2f2f2;
 }
 
-.section-subtitle__theme_dark {
+/* блок section-title модификатор theme_dark*/
+.section-subtitle_theme_dark {
   color: #f2f2f2;
 }
 
-.table__theme_dark {
+/* блок table модификатор theme_dark */
+.table_theme_dark {
   color: #f2f2f2;
   justify-content: center;
   padding-top: 80px;
@@ -263,21 +294,25 @@
   margin-bottom: 0;
 }
 
+/* блок table элемент cell модификатор theme_dark */
 .table__cell_theme_dark {
   padding-top: 80px;
   width: 200px;
   color: white;
 }
 
+/* блок table элемент heading модификатор theme_dark */
 .table__heading_theme_dark {
   color: #f2f2f2;
 }
 
+/* блок table элемент text модификатор theme_dark */
 .table__text_theme_dark {
   width: 200px;
   color: #f2f2f2;
 }
 
+/* блок kaufman элемент triangle */
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
@@ -288,6 +323,7 @@
   z-index: -1;
 }
 
+/* блок footer */
 .footer {
   background-color: #000000;
   display: flex;
@@ -298,6 +334,7 @@
 
 }
 
+/* блок footer элемент columns*/
 .footer__columns {
   display: flex;
   width: 90%;
@@ -305,6 +342,7 @@
   /* border: 1px solid red; */
 }
 
+/* блок footer элемент column модификатор content_copyright*/
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
@@ -313,22 +351,26 @@
   justify-content: space-between;
 }
 
+/* блок footer элемент column модификатор content_info*/
 .footer__column_content_info {
   flex-direction: column;
   align-items: flex-end;
 }
 
+/* блок footer элемент column модификатор content_social*/
 .footer__column_content_social {
   flex-direction: column;
   align-items: flex-end;
 }
 
-.logo__place_footer {
+/* блок logo с модификатором place_footer */
+.logo_place_footer {
   position: static;
   color: #f2f2f2;
   display: flex;
 }
 
+/* блок footer элемент author */
 .footer__author {
   color: #f2f2f2;
   margin: 18px 0px 18px;
@@ -339,6 +381,7 @@
   font-weight: 500;
 }
 
+/* блок footer элемент column-heading */
 .footer__column-heading {
   margin-top: 0;
   margin-bottom: 20px;
@@ -349,6 +392,7 @@
   font-weight: 600;
 }
 
+/* блок footer элемент column-links */
 .footer__column-links {
   margin-top: 0;
   margin-bottom: 0;
@@ -360,10 +404,12 @@
   font-weight: 500;
 }
 
+/* блок footer элемент social-icon */
 .footer__social-icon {
   margin-right: 10px;
 }
 
+/* блок footer элемент column-link */
 .footer__column-link {
   color: #f2f2f2;
   text-decoration: none;
