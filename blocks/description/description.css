@@ -1,0 +1,6 @@
+.description {
+    margin-top: 100px; /* по БЭМ следует убрать margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,9 @@
+.table {
+    display: flex;
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    /* border: 1px solid red; */
+  }

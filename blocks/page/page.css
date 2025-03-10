@@ -1,0 +1,10 @@
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    --black-background: #1f1f11;
+    --grey-background: #f2f2f2;
+    --blue-elem: #2f80ed;
+    --black-text: #000000;
+  }
