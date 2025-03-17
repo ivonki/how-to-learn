@@ -3,7 +3,10 @@
     position: absolute;
     right: -210px;
     top: 0;
-    width: 877px;
-    height: 877px;
+    margin: 0;
+    min-width: 877px;
+    min-height: 877px;
     z-index: -1;
+    /* overflow: hidden; */
+    background-size: cover;
   }

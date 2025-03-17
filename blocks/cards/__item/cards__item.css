@@ -1,0 +1,11 @@
+.cards__item {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.cards__item:nth-child(3n) {
+    margin-right: 0;
+}

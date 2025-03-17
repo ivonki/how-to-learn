@@ -1,0 +1,9 @@
+.khan__book-container {
+    display: flex;
+    gap: 48px;
+    padding-top: 68px;
+}
+
+.khan__book-container:nth-child(2n) {
+    margin-right: -48px;
+}
